@@ -1,0 +1,6 @@
+function r = halfflux(l, r)
+	f = @flux;
+	r=1/2*(f(l) + f(r) - max(abs(l(2)/l(1)) + sound(l),...
+	                         abs(r(2)/r(1)) + sound(r))...
+		*(r-l));
+end

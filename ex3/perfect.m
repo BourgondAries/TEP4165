@@ -1,0 +1,1 @@
+function result = perfect(tend)
